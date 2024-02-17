@@ -1,0 +1,16 @@
+{
+    "name": "kamilsawicki/form-builder",
+    "description": "Simple form builder for Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "KamilSawicki\\FormBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kamil Sawicki"
+        }
+    ],
+    "require": {}
+}
