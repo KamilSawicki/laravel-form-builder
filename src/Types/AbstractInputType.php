@@ -62,10 +62,10 @@ abstract class AbstractInputType implements TypeInterface
 
     public function render(): string
     {
-        return Blade::render('<div @if($class)class="{{ $class }}"@endif>{!! $label !!}{!! $control !!}</div>', [
+        return Blade::render('<div{!! $class !!}>{!! $label !!}{!! $control !!}</div>', [
             'label' => $this->renderLaber(),
             'control' => $this->renderControl(),
-            'class' => $this->wrapperClass,
+            'class' => $this->wrapperClass ? " class=\"$($this->wrapperClass)\"" : null,
         ]);
     }
 
